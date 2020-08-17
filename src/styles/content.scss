@@ -1,0 +1,9 @@
+.content {
+  min-width: 1094px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: $content-bg-color;
+  padding-top: 72px;
+}

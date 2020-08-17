@@ -1,0 +1,59 @@
+.menu {
+  display: flex;
+
+  &__base {
+    position: relative;
+    min-width: 224px;
+    background: $main-color;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: linear-gradient(90deg, $gradient-color-one 0%, $gradient-color-two 100%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  &__title {
+    line-height: $line-height-3;
+    font-weight: $font-bold;
+    margin-top: 13px;
+  }
+
+  &__subtitle {
+    line-height: $line-height-7;
+    font-size: $font-size-6;
+    margin-top: 2px;
+  }
+
+  &__title,
+  &__subtitle {
+    color: $title-color;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    color: $item-color;
+    background-color: $main-cell-color;
+    & svg {
+      margin: 0 12px;
+    }
+  }
+
+  &__separator {
+    width: 4px;
+    height: 44px;
+    background-color: $item-color;
+  }
+}
